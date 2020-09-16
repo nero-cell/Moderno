@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__logo">
+                    <img src="img/header/logo.png" alt="logo">
+                </div>
+                <img src="img/header/burger.svg" alt="burger" class="header__burger">
+            </div>
+            <div class="header__bottom">
+                <h1 class="header__title">MODERNO</h1>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Curabitur eu velit nulla.
+                </p>
+                <a href="#contact" class="header__button button">
+                    <span >Get In Touch</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="menu">
+            <img src="img/menu/close.svg" alt="close" class="menu__close">
+            <div class="menu__logo">
+                <img src="img/menu/logo.svg" alt="logo">
+            </div>
+            <h2 class="menu__title">MENU</h2>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#">HOME</a></li>
+                <li class="menu__item"><a href="#services">SERVICES</a></li>
+                <li class="menu__item"><a href="#stories">STORIES</a></li>
+                <li class="menu__item"><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="menu__socials">
+                <a href="https://www.facebook.com/" class="menu__social">
+                    <img src="img/menu/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.twitter.com/" class="menu__social">
+                    <img src="img/menu/tweeter.svg" alt="twitter">
+                </a>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="services__items">
+                    <div class="services__service">
+                        <div class="services__logo orange">
+                            <img src="img/services/service01.svg" alt="service01">
+                        </div>
+                        <h3 class="services__title">We Are Creative</h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit amet, dicta albucius ne.Nostro 
+                            gubergren in ius, ea nam vocent electram. An verear 
+                            efficiantur usu
+                        </p>
+                    </div>
+                    <div class="services__service">
+                        <div class="services__logo">
+                            <img src="img/services/service02.svg" alt="service02">
+                        </div>
+                        <h3 class="services__title">We have Skills</h3>
+                        <p class="services__text">
+                            Nostro gubergren in ius, ea nam vocent electram. An 
+                            verear efficiantur.
+                        </p>
+                    </div>
+                    <div class="services__service">
+                        <div class="services__logo">
+                            <img src="img/services/service03.svg" alt="service03">
+                        </div>
+                        <h3 class="services__title">We Love To Help</h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit amet, dicta. Nostro gubergren in 
+                            ius, ea nam vocent. An verear efficiantur usu
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stories" id="stories">
+            <div class="container">
+                <h3 class="stories__title">Success Stories</h3>
+                <p class="stories__text">We do awesome work,check some of success 
+                    stories so far</p>
+                <div class="clicked-image">
+                    <div class="clicked-image__img">
+                        <img src="img/stories/pexels-lukas.jpg" alt="">
+                    </div>
+                    <div class="clicked-image__content">
+                        <img src="img/stories/closeButton.svg" alt="" class="clicked-image__close">
+                        <h4 class="clicked-image__title">Lorem Ipsum Project</h4>
+                        <p class="clicked-image__text">Lorem Ipsum is simply dummy 
+                            text of the printing and typesetting industry. Lorem 
+                            Ipsum has been the industry's standard dummy text ever 
+                            since the 1500s, when an unknown printer took a galley of 
+                            type and scrambled it to make a type specimen book.</p>
+                        <a class="clicked-image__button button">
+                            <span>View Project</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="stories__images">
+                    <div class="stories__image">
+                        <img src="img/stories/pexels-andrea.jpg" alt="">
+                    </div>
+                    <div class="stories__image">
+                        <img src="img/stories/pexels-fauxels.jpg" alt="">
+                    </div>
+                    <div class="stories__image">
+                        <img src="img/stories/pexels-fox.jpg" alt="">
+                    </div>
+                    <div class="stories__image">
+                        <img src="img/stories/code.jpg" alt="">
+                    </div>
+                    <div class="stories__image">
+                        <img src="img/stories/pexels-picjumbocom.jpg" alt="">
+                    </div>
+                    <div class="stories__image">
+                        <img src="img/stories/pexels-pixabay.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us" id="contact">
+            <div class="container">
+                <h3 class="contact-us__title">Get In Touch</h3>
+                <p class="contact-us__text">We are communicative and social</p>
+                <div class="contact">
+                    <form action="handler.php" method="GET" 
+                        class="contact__form">
+                        <div class="contact__input-wrapper">
+                            <input type="text" name="name" class="contact__name" placeholder="Your Name">
+                            <input type="email" name="mail" class="contact__mail" placeholder="Your Mail">
+                        </div>
+                        <input type="text" name="subject" class="contact__subject" placeholder="Subject">
+                        <textarea name="message" class="contact__message" placeholder="Type Massage Here..."></textarea>
+                        <button type="submit" class="contact__button button">
+                            <span>SEND</span>
+                        </button>
+                    </form>
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <h5 class="contact__title">Our Address</h5>
+                            <address class="contact__text">4896 Desert Broom Court Newark, NJ 07102 United States</address>
+                        </div>
+                        <div class="contact__item">
+                            <h5 class="contact__title">Email</h5>
+                            <address class="contact__text">modernomail@mail.com</address>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__title">Phone</div>
+                            <address class="contact__text">+00 123-456-78900</address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">Copyright © 2020 Moderno, All Rights Reserved</p>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/" class="footer__icon">
+                        <img src="img/menu/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="https://www.twitter.com/" class="footer__icon">
+                        <img src="img/menu/tweeter.svg" alt="twitter">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
